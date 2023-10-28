@@ -5,8 +5,15 @@
 <div class="flex justify-center h-screen">
   <div class="w-1/2 fixed font-monsterrat">
 
-    <div class="font-semibold mt-20 text-3xl">
-      Username
+    <div class="mt-20">
+      <span class="font-semibold text-3xl mr-2">
+        Username
+      </span>
+      <span>
+        <button class="text-sm">
+          Edit
+        </button>
+      </span>
     </div>
 
     <div class="flex flex-row mt-1 text-sm">
@@ -33,7 +40,7 @@
       </button>
       <button 
           class="text-gray-500 hover:bg-gray-200 text-sm" 
-          on:click={() => displayedContent = "liked"}>
+          on:click={() => displayedContent = "like"}>
           Liked
       </button>
       <hr>
