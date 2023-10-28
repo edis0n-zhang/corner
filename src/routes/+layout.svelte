@@ -8,7 +8,7 @@
 </style>
 
 <div>
-  {#if $page.url.pathname != '/newuser'}
+  {#if $page.url.pathname != '/newuser' && $page.url.pathname != '/design'}
     <Sidebar/>
   {/if}
   <slot />
