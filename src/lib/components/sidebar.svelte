@@ -5,24 +5,25 @@
   import SettingsIcon from "../images/Setting_fill.svelte"
   import DesignIcon from "../images/Edit_fill.svelte"
   import ProfileIcon from "../images/User_fill.svelte"
+  import Logo from "../images/logo.svelte"
 
   let menuItems = [
-    { name: "Feed", icon: FeedIcon },
-    { name: "Explore", icon: ExploreIcon },
-    { name: "Pins", icon: PinsIcon },
-    { name: "Design", icon: DesignIcon },
+    { name: "feed", icon: FeedIcon },
+    { name: "explore", icon: ExploreIcon },
+    { name: "pins", icon: PinsIcon },
+    { name: "design", icon: DesignIcon },
   ];
 
 </script>
 
-<div class={`fixed top-10 left-16 flex flex-col w-1/4 items-start h-screen overflow-y-auto overflow-x-hidden scrollbar-hide`}>
-  <div class="font-montserrat font-bold text-5xl my-10">
+<div class={`fixed top-16 left-14 flex flex-col w-1/4 items-start h-screen overflow-y-auto overflow-x-hidden scrollbar-hide`}>
+  <div class="font-montserrat font-bold text-4xl">
     <div class = "flex flex-row items-center">
       <div class="transform scale-125">
-        <DesignIcon/>
+        <Logo/>
       </div>
-      <div class="{`opacity-0 lg:opacity-100 lg:inline-block`}">
-        corner
+      <div class="{`opacity-0 lg:opacity-100 lg:inline-block ml-2`}">
+        hearth
       </div>
     </div>
   </div>
@@ -31,28 +32,28 @@
     {#each menuItems as item}
       <li class="my-5">
         <a href = "/{(item.name).toLowerCase()}" class="flex flex-row items-center">
-          <div class="transform scale-125">
+          <div class="transform scale-125 translate-x-2">
             <svelte:component this={item.icon}/>
           </div>
           <a href="/{(item.name).toLowerCase()}">
-            <span class="{`opacity-0 lg:opacity-100 lg:inline-block`} ml-3 font-montserrat text-4xl font-semibold hover:text-black/75">{item.name}</span>
+            <span class="{`opacity-0 lg:opacity-100 lg:inline-block`} ml-5 font-montserrat text-3xl hover:text-black/75">{item.name}</span>
         </a>
       </li>
     {/each}
   </ul>
 
-  <div class = "lg:fixed bottom-20 left-16 flex flex-col">
+  <div class = "lg:fixed bottom-20 left-14 flex flex-col translate-x-2">
     <a href = "/settings" class="flex flex-row items-center">
       <div class="transform scale-125">
         <SettingsIcon/>
       </div>
-      <span class="{`opacity-0 lg:opacity-100 lg:inline-block`} ml-4 font-montserrat text-4xl font-semibold hover:text-black/75">Settings</span>
+      <span class="{`opacity-0 lg:opacity-100 lg:inline-block`} ml-4 font-montserrat text-3xl hover:text-black/75">settings</span>
     </a>
-    <a href = "/profile" class="flex flex-row items-center">
+    <a href = "/profile" class="flex flex-row items-center mt-5">
       <div class="transform scale-125">
         <ProfileIcon/>
       </div>
-      <span class="{`opacity-0 lg:opacity-100 lg:inline-block`} ml-4 font-montserrat text-4xl font-semibold hover:text-black/75"> Profile</span>
+      <span class="{`opacity-0 lg:opacity-100 lg:inline-block`} ml-4 font-montserrat text-3xl hover:text-black/75"> profile</span>
     </a>
   </div>
 </div>
