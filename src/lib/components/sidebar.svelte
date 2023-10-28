@@ -15,8 +15,8 @@
 
 </script>
 
-<div class={`fixed flex flex-col w-1/3 items-start pl-16`}>
-  <div class="font-montserrat font-bold text-5xl my-10 mt-20">
+<div class={`fixed top-10 left-16 flex flex-col w-1/4 items-start h-screen overflow-y-auto overflow-x-hidden`}>
+  <div class="font-montserrat font-bold text-5xl my-10">
     <div class = "flex flex-row items-center">
       <div class="transform scale-125">
         <DesignIcon/>
@@ -41,7 +41,7 @@
     {/each}
   </ul>
 
-  <div class = "flex flex-col mt-44">
+  <div class = "fixed bottom-20 left-16 flex flex-col">
     <a href = "/settings" class="flex flex-row items-center">
       <div class="transform scale-125">
         <SettingsIcon/>
