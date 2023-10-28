@@ -1,6 +1,7 @@
 <script>
   import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
+  import BigLogo from '$lib/images/biglogo.svelte';
   let verbs = ["build", "launch", "create", "make"];
   let nouns = ["brand", "business", "portfolio", "dream"];
   let i = 0, counter = 0;
@@ -111,9 +112,14 @@
     </div>
   </div>
   {:else}
-    <div class = "signup w-screen" in:fade={{ duration: 1000 }}>
-      <div class = "font-montserrat text-9xl font-bold pb-5 justify-self-center">
-        corner
+    <div class = "signup w-screen h-screen items-center" in:fade={{ duration: 1000 }}>
+      <div class = "flex flex-row items-center justify-self-center">
+        <div class = "transform scale-150 mt-[-14px]">
+          <BigLogo/>
+        </div>
+        <div class = "font-montserrat text-9xl font-bold pb-5 justify-self-center ml-8">
+          hearth
+        </div>
       </div>
       <div class = "flex flex-col self-justify-center">
         <h1 class="mb-1">
