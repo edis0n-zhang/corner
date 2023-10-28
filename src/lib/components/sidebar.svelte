@@ -1,21 +1,29 @@
 <script>
-
+  let menuItems = [
+    { name: "Feed", icon: "🏠" },
+    { name: "Explore", icon: "🔍" },
+    { name: "Bookmarks", icon: "🔖" },
+    { name: "Settings", icon: "🔖" },
+    { name: "Design", icon: "pen"},
+    { name: "Profile", icon: "👤" },
+  ];
 </script>
 
-<div class={`md:block md:w-1/4 fixed top-0 left-0 h-full transition-transform transform text-left pl-6`}>
-  <div class="p-4">
-    <h2 class="text-4xl font-montserrat mb-4 font-bold">corner</h2>
-    <!-- Add your sidebar content here -->
-    <ul>
-      <li class="mb-2">
-        <a href="#" class="text-gray-700 hover:text-black">Item 1</a>
-      </li>
-      <li class="mb-2">
-        <a href="#" class="text-gray-700 hover:text-black">Item 2</a>
-      </li>
-      <!-- ... -->
-    </ul>
+<div class={`flex flex-col w-1/3 items-start pl-24`}>
+  <div class="font-montserrat font-bold text-5xl my-10 mt-40">
+    corner
   </div>
+
+  <ul>
+    {#each menuItems as item}
+      <li>
+        <a href="/{(item.name).toLowerCase()}" class="my-5">
+          <span class="font-montserrat text-4xl font-semibold hover:text-black/75">{item.name}</span>
+        </a>
+      </li>
+    {/each}
+  </ul>
+
 </div>
 
 <style>
