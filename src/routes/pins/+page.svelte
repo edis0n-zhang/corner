@@ -3,7 +3,7 @@
 </script>
 
 <h1>
-  bookmarks
+  pins
 </h1>
 
 <style lang="postcss">
