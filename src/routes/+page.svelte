@@ -1,6 +1,8 @@
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
+<script>
+  import Sidebar from "$lib/components/sidebar.svelte";
+</script>
+
+<Sidebar/>
 
 <style lang="postcss">
   :global(html) {
