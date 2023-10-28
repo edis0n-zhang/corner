@@ -1,4 +1,5 @@
 <script>
+  import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
   let verbs = ["build", "launch", "create", "make"];
   let nouns = ["brand", "business", "portfolio", "dream"];
@@ -110,20 +111,29 @@
     </div>
   </div>
   {:else}
-    <div class = "signup w-screen">
+    <div class = "signup w-screen" in:fade={{ duration: 1000 }}>
       <div class = "font-montserrat text-9xl font-bold pb-5 justify-self-center">
         corner
       </div>
       <div class = "flex flex-col self-justify-center">
+        <h1 class="mb-1">
+          Need an account?
+        </h1>
         <button class = "registerbutton w-1/2">
-          register with google
+          sign up with google
         </button>
         <button class = "registerbutton w-1/2">
-          register with ____
+          sign up with apple
         </button>
-        <hr class = "my-10 w-1/2">
         <button class = "registerbutton w-1/2">
-          register
+          sign up with email
+        </button>
+        <hr class = "my-5 w-1/2">
+        <h1 class="mb-1">
+          Already have an account?
+        </h1>
+        <button class = "registerbutton w-1/2">
+          sign in
         </button>
       </div>
     </div>

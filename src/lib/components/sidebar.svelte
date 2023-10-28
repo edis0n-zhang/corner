@@ -15,7 +15,7 @@
 
 </script>
 
-<div class={`fixed top-10 left-16 flex flex-col w-1/4 items-start h-screen overflow-y-auto overflow-x-hidden`}>
+<div class={`fixed top-10 left-16 flex flex-col w-1/4 items-start h-screen overflow-y-auto overflow-x-hidden scrollbar-hide`}>
   <div class="font-montserrat font-bold text-5xl my-10">
     <div class = "flex flex-row items-center">
       <div class="transform scale-125">
@@ -41,7 +41,7 @@
     {/each}
   </ul>
 
-  <div class = "fixed bottom-20 left-16 flex flex-col">
+  <div class = "lg:fixed bottom-20 left-16 flex flex-col">
     <a href = "/settings" class="flex flex-row items-center">
       <div class="transform scale-125">
         <SettingsIcon/>
@@ -60,5 +60,15 @@
 
 
 <style>
+  /* For Webkit-based browsers (Chrome, Safari and Opera) */
+  .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+  }
+
+  /* For IE, Edge and Firefox */
+  .scrollbar-hide {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }
   /* You can add any component-specific styles here, if necessary */
 </style>
