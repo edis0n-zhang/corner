@@ -4,9 +4,12 @@
   import "../app.css";
 </script>
 
-<!-- to do: make sidebar persist throughout all pages except those excluded (like new user / signup page) -->
-{#if $page.url.pathname != '/newuser'}
-  <Sidebar/>
-{/if}
+<style>
+</style>
 
-<slot />
+<div>
+  {#if $page.url.pathname != '/newuser'}
+    <Sidebar/>
+  {/if}
+  <slot />
+</div>

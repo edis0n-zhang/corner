@@ -10,12 +10,12 @@
     { name: "Feed", icon: FeedIcon },
     { name: "Explore", icon: ExploreIcon },
     { name: "Pins", icon: PinsIcon },
-    { name: "Settings", icon: SettingsIcon },
+    { name: "Design", icon: DesignIcon },
   ];
 
 </script>
 
-<div class={`flex flex-col w-1/3 items-start pl-24`}>
+<div class={`fixed flex flex-col w-1/3 items-start pl-24`}>
   <div class="font-montserrat font-bold text-5xl my-10 mt-20">
     corner
   </div>
@@ -38,10 +38,10 @@
   <div class = "flex flex-col">
     <div class = "flex flex-row items-center mt-48">
       <div class="transform scale-125">
-        <DesignIcon/>
+        <SettingsIcon/>
       </div>
-      <a href = "/design">
-        <span class="ml-3 font-montserrat text-4xl font-semibold hover:text-black/75"> Design</span>
+      <a href = "/settings">
+        <span class="ml-3 font-montserrat text-4xl font-semibold hover:text-black/75">Settings</span>
       </a>
     </div>
     <div class = "flex flex-row items-center mt-8">

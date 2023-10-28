@@ -23,8 +23,9 @@
         if(counter % 2 == 1){
           i++;
         }
+        i = i % 4
 
-        if (i >= verbs.length) {
+        if (counter >= verbs.length * 2) {
           // scrollText.style.display = 'none';
           // centerText.style.display = 'none';
           animationFinished = true;
