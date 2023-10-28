@@ -15,43 +15,45 @@
 
 </script>
 
-<div class={`fixed flex flex-col w-1/3 items-start pl-24`}>
+<div class={`fixed flex flex-col w-1/3 items-start pl-16`}>
   <div class="font-montserrat font-bold text-5xl my-10 mt-20">
-    corner
+    <div class = "flex flex-row items-center">
+      <div class="transform scale-125">
+        <DesignIcon/>
+      </div>
+      <div class="{`opacity-0 lg:opacity-100 lg:inline-block`}">
+        corner
+      </div>
+    </div>
   </div>
 
   <ul>
     {#each menuItems as item}
-      <li>
-        <div class = "flex flex-row items-center">
+      <li class="my-5">
+        <a href = "/{(item.name).toLowerCase()}" class="flex flex-row items-center">
           <div class="transform scale-125">
-            <svelte:component this={item.icon} />
+            <svelte:component this={item.icon}/>
           </div>
-          <a href="/{(item.name).toLowerCase()}" class="my-5">
-            <span class="ml-3 font-montserrat text-4xl font-semibold hover:text-black/75">{item.name}</span>
-          </a>
-        </div>
+          <a href="/{(item.name).toLowerCase()}">
+            <span class="{`opacity-0 lg:opacity-100 lg:inline-block`} ml-3 font-montserrat text-4xl font-semibold hover:text-black/75">{item.name}</span>
+        </a>
       </li>
     {/each}
   </ul>
 
-  <div class = "flex flex-col">
-    <div class = "flex flex-row items-center mt-48">
+  <div class = "flex flex-col mt-44">
+    <a href = "/settings" class="flex flex-row items-center">
       <div class="transform scale-125">
         <SettingsIcon/>
       </div>
-      <a href = "/settings">
-        <span class="ml-3 font-montserrat text-4xl font-semibold hover:text-black/75">Settings</span>
-      </a>
-    </div>
-    <div class = "flex flex-row items-center mt-8">
+      <span class="{`opacity-0 lg:opacity-100 lg:inline-block`} ml-4 font-montserrat text-4xl font-semibold hover:text-black/75">Settings</span>
+    </a>
+    <a href = "/profile" class="flex flex-row items-center">
       <div class="transform scale-125">
         <ProfileIcon/>
       </div>
-      <a href = "/profile">
-        <span class="ml-3 font-montserrat text-4xl font-semibold hover:text-black/75"> Profile</span>
-      </a>
-    </div>
+      <span class="{`opacity-0 lg:opacity-100 lg:inline-block`} ml-4 font-montserrat text-4xl font-semibold hover:text-black/75"> Profile</span>
+    </a>
   </div>
 </div>
 
