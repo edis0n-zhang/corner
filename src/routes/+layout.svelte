@@ -8,11 +8,16 @@
 </style>
 
 <div>
+<<<<<<< HEAD
   {#if !$page.url.pathname.startsWith('/login') && $page.url.pathname != '/design'}
     <Sidebar/>
   {/if}
   <slot />
 </div>
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
   <div>
     {#if $page.url.pathname != '/newuser' && $page.url.pathname != '/design'}
       <Sidebar/>
@@ -22,3 +27,7 @@
     <slot />
   </div>
 </div>
+<<<<<<< Updated upstream
+=======
+>>>>>>> 1b7cdfd (Add server)
+>>>>>>> Stashed changes
