@@ -40,7 +40,7 @@
       </button>
       <button 
           class="text-gray-500 hover:bg-gray-200 text-sm" 
-          on:click={() => displayedContent = "like"}>
+          on:click={() => displayedContent = "liked"}>
           Liked
       </button>
       <hr>
