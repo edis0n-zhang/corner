@@ -22,7 +22,7 @@
 </style>
 
 <div>
-  {#if !$page.url.pathname.startsWith('/login') && $page.url.pathname != '/design'}
+  {#if !$page.url.pathname.startsWith('/login')}
     <Sidebar/>
   {/if}
   <slot />
