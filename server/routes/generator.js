@@ -84,7 +84,7 @@ router.post('/generate', function(req, res, next) {
 
   console.log("REQUESTED");
   axios.post(process.env.OPENAI_API_URL, {
-      "model": "gpt-3.5-turbo",
+      "model": "gpt-4-0613",
       "messages": [
         {
           "role": "system",
