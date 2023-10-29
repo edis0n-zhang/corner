@@ -2,18 +2,6 @@
   import Sidebar from "$lib/components/sidebar.svelte";
   import { page } from '$app/stores';
   import "../app.css";
-
-  import {signedIn} from '../store.js';
-  import {onMount} from 'svelte';
-
-  onMount(() => {
-    if (!$signedIn && !window.location.pathname.startsWith('/login')) {
-      window.location.href = '/login';
-    } else if ($signedIn && page.url.pathname == '/') {
-      window.location.href = '/feed';
-    }
-  });
-
 </script>
 
 <style>
@@ -24,4 +12,13 @@
     <Sidebar/>
   {/if}
   <slot />
+</div>
+  <div>
+    {#if $page.url.pathname != '/newuser' && $page.url.pathname != '/design'}
+      <Sidebar/>
+    {/if}
+  </div>
+  <div>
+    <slot />
+  </div>
 </div>
