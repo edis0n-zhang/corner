@@ -6,10 +6,12 @@
   import {signedIn} from '../store.js';
   import {onMount} from 'svelte';
 
+  $signedIn = true
+
   onMount(() => {
     if (!$signedIn && !window.location.pathname.startsWith('/login')) {
       window.location.href = '/login';
-    } else if ($signedIn && page.url.pathname == '/') {
+    } else if ($signedIn && page.url.pathname == '') {
       window.location.href = '/feed';
     }
   });

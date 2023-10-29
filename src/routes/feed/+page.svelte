@@ -1,21 +1,31 @@
 <script>
-
+  import { feedStore } from '../../store.js';
 </script>
 
-<div class="flex justify-center h-screen">
-  <div class="w-1/2">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. Maecenas non diam cursus, imperdiet massa eget, pellentesque ex. Vestibulum lacinia porttitor ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pulvinar egestas libero, in sodales mauris efficitur a. Fusce non bibendum dui. Fusce finibus vel arcu non finibus. Pellentesque vehicula elit at orci pharetra, vel posuere libero volutpat. Proin eu tellus non dolor semper efficitur. Proin sodales, magna a varius convallis, dui turpis facilisis ipsum, id tempus metus dui eu leo. Integer lacinia, justo ut facilisis facilisis, risus elit posuere ipsum, at porttitor lacus mauris sed ligula.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. Maecenas non diam cursus, imperdiet massa eget, pellentesque ex. Vestibulum lacinia porttitor ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pulvinar egestas libero, in sodales mauris efficitur a. Fusce non bibendum dui. Fusce finibus vel arcu non finibus. Pellentesque vehicula elit at orci pharetra, vel posuere libero volutpat. Proin eu tellus non dolor semper efficitur. Proin sodales, magna a varius convallis, dui turpis facilisis ipsum, id tempus metus dui eu leo. Integer lacinia, justo ut facilisis facilisis, risus elit posuere ipsum, at porttitor lacus mauris sed ligula.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. Maecenas non diam cursus, imperdiet massa eget, pellentesque ex. Vestibulum lacinia porttitor ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pulvinar egestas libero, in sodales mauris efficitur a. Fusce non bibendum dui. Fusce finibus vel arcu non finibus. Pellentesque vehicula elit at orci pharetra, vel posuere libero volutpat. Proin eu tellus non dolor semper efficitur. Proin sodales, magna a varius convallis, dui turpis facilisis ipsum, id tempus metus dui eu leo. Integer lacinia, justo ut facilisis facilisis, risus elit posuere ipsum, at porttitor lacus mauris sed ligula.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. Maecenas non diam cursus, imperdiet massa eget, pellentesque ex. Vestibulum lacinia porttitor ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pulvinar egestas libero, in sodales mauris efficitur a. Fusce non bibendum dui. Fusce finibus vel arcu non finibus. Pellentesque vehicula elit at orci pharetra, vel posuere libero volutpat. Proin eu tellus non dolor semper efficitur. Proin sodales, magna a varius convallis, dui turpis facilisis ipsum, id tempus metus dui eu leo. Integer lacinia, justo ut facilisis facilisis, risus elit posuere ipsum, at porttitor lacus mauris sed ligula.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. Maecenas non diam cursus, imperdiet massa eget, pellentesque ex. Vestibulum lacinia porttitor ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pulvinar egestas libero, in sodales mauris efficitur a. Fusce non bibendum dui. Fusce finibus vel arcu non finibus. Pellentesque vehicula elit at orci pharetra, vel posuere libero volutpat. Proin eu tellus non dolor semper efficitur. Proin sodales, magna a varius convallis, dui turpis facilisis ipsum, id tempus metus dui eu leo. Integer lacinia, justo ut facilisis facilisis, risus elit posuere ipsum, at porttitor lacus mauris sed ligula.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. Maecenas non diam cursus, imperdiet massa eget, pellentesque ex. Vestibulum lacinia porttitor ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pulvinar egestas libero, in sodales mauris efficitur a. Fusce non bibendum dui. Fusce finibus vel arcu non finibus. Pellentesque vehicula elit at orci pharetra, vel posuere libero volutpat. Proin eu tellus non dolor semper efficitur. Proin sodales, magna a varius convallis, dui turpis facilisis ipsum, id tempus metus dui eu leo. Integer lacinia, justo ut facilisis facilisis, risus elit posuere ipsum, at porttitor lacus mauris sed ligula.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. Maecenas non diam cursus, imperdiet massa eget, pellentesque ex. Vestibulum lacinia porttitor ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pulvinar egestas libero, in sodales mauris efficitur a. Fusce non bibendum dui. Fusce finibus vel arcu non finibus. Pellentesque vehicula elit at orci pharetra, vel posuere libero volutpat. Proin eu tellus non dolor semper efficitur. Proin sodales, magna a varius convallis, dui turpis facilisis ipsum, id tempus metus dui eu leo. Integer lacinia, justo ut facilisis facilisis, risus elit posuere ipsum, at porttitor lacus mauris sed ligula.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. Maecenas non diam cursus, imperdiet massa eget, pellentesque ex. Vestibulum lacinia porttitor ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pulvinar egestas libero, in sodales mauris efficitur a. Fusce non bibendum dui. Fusce finibus vel arcu non finibus. Pellentesque vehicula elit at orci pharetra, vel posuere libero volutpat. Proin eu tellus non dolor semper efficitur. Proin sodales, magna a varius convallis, dui turpis facilisis ipsum, id tempus metus dui eu leo. Integer lacinia, justo ut facilisis facilisis, risus elit posuere ipsum, at porttitor lacus mauris sed ligula.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. Maecenas non diam cursus, imperdiet massa eget, pellentesque ex. Vestibulum lacinia porttitor ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pulvinar egestas libero, in sodales mauris efficitur a. Fusce non bibendum dui. Fusce finibus vel arcu non finibus. Pellentesque vehicula elit at orci pharetra, vel posuere libero volutpat. Proin eu tellus non dolor semper efficitur. Proin sodales, magna a varius convallis, dui turpis facilisis ipsum, id tempus metus dui eu leo. Integer lacinia, justo ut facilisis facilisis, risus elit posuere ipsum, at porttitor lacus mauris sed ligula.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. Maecenas non diam cursus, imperdiet massa eget, pellentesque ex. Vestibulum lacinia porttitor ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pulvinar egestas libero, in sodales mauris efficitur a. Fusce non bibendum dui. Fusce finibus vel arcu non finibus. Pellentesque vehicula elit at orci pharetra, vel posuere libero volutpat. Proin eu tellus non dolor semper efficitur. Proin sodales, magna a varius convallis, dui turpis facilisis ipsum, id tempus metus dui eu leo. Integer lacinia, justo ut facilisis facilisis, risus elit posuere ipsum, at porttitor lacus mauris sed ligula.
-    </div>
-</div>
-<style lang="postcss">
 
+<div class="flex flex-col w-screen items-center my-20">
+  {#each $feedStore as post (post.user)}
+    <div class="post my-2">
+      <img src="https://via.placeholder.com/40" class="icon" alt="{post.user}">
+      <div class="content mx-5">
+        <div class="w-96 font-semibold">{post.user}</div>
+        <div>{post.content}</div>
+      </div>
+    </div>
+  {/each}
+</div>
+
+
+<style lang="postcss">
+  .post {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    max-width: 50vw;
+    width: 100%; /* Make sure it takes the full width of its parent */
+    margin: 0 auto; 
+  }
+
+  .icon {
+    border-radius: 50%
+  }
 </style>
