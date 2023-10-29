@@ -2,6 +2,7 @@
   import Sidebar from "$lib/components/sidebar.svelte";
   import { page } from '$app/stores';
   import "../app.css";
+<<<<<<< HEAD
 
   import {signedIn} from '../store.js';
   import {onMount} from 'svelte';
@@ -16,14 +17,24 @@
     }
   });
 
+=======
+>>>>>>> gen
 </script>
 
 <style>
 </style>
 
 <div>
+<<<<<<< HEAD
   {#if !$page.url.pathname.startsWith('/login')}
     <Sidebar/>
   {/if}
   <slot />
 </div>
+=======
+  {#if $page.url.pathname != '/newuser'}
+    <Sidebar/>
+  {/if}
+  <slot />
+</div>
+>>>>>>> gen
