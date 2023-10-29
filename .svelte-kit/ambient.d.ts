@@ -36,6 +36,7 @@ declare module '$env/static/private' {
 	export const PYENV_ROOT: string;
 	export const _P9K_TTY: string;
 	export const GEM_HOME: string;
+	export const npm_package_dependencies_axios: string;
 	export const npm_package_devDependencies_typescript: string;
 	export const npm_config_version_git_tag: string;
 	export const SHELL: string;
@@ -64,6 +65,7 @@ declare module '$env/static/private' {
 	export const POWERSHELL_TELEMETRY_OPTOUT: string;
 	export const CONDA_EXE: string;
 	export const HOMEBREW_NO_ANALYTICS: string;
+	export const npm_package_dependencies_monaco_editor: string;
 	export const SSH_AUTH_SOCK: string;
 	export const __CF_USER_TEXT_ENCODING: string;
 	export const npm_package_devDependencies_postcss: string;
@@ -183,6 +185,7 @@ declare module '$env/dynamic/private' {
 		PYENV_ROOT: string;
 		_P9K_TTY: string;
 		GEM_HOME: string;
+		npm_package_dependencies_axios: string;
 		npm_package_devDependencies_typescript: string;
 		npm_config_version_git_tag: string;
 		SHELL: string;
@@ -211,6 +214,7 @@ declare module '$env/dynamic/private' {
 		POWERSHELL_TELEMETRY_OPTOUT: string;
 		CONDA_EXE: string;
 		HOMEBREW_NO_ANALYTICS: string;
+		npm_package_dependencies_monaco_editor: string;
 		SSH_AUTH_SOCK: string;
 		__CF_USER_TEXT_ENCODING: string;
 		npm_package_devDependencies_postcss: string;
