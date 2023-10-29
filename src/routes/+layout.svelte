@@ -7,8 +7,10 @@
   import {onMount} from 'svelte';
 
   onMount(() => {
-    if (signedIn && $page.url.pathname != '/newuser') {
-      window.location.href = '/newuser';
+    if (!$signedIn && !window.location.pathname.startsWith('/login')) {
+      window.location.href = '/login';
+    } else if ($signedIn && page.url.pathname == '/') {
+      window.location.href = '/feed';
     }
   });
 
@@ -18,7 +20,7 @@
 </style>
 
 <div>
-  {#if $page.url.pathname != '/newuser' && $page.url.pathname != '/design'}
+  {#if !$page.url.pathname.startsWith('/login') && $page.url.pathname != '/design'}
     <Sidebar/>
   {/if}
   <slot />

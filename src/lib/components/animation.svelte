@@ -7,14 +7,18 @@
   let i = 0, counter = 0;
   let animationFinished = false;
 
-  function register() {
-    console.log('Register button clicked!');
+  function redirectToRegister() {
+      window.location.href = '/login/register';
+  }
+
+  function redirectToSignIn() {
+      window.location.href = '/login/signin';
   }
 
   onMount(() => {
     const scrollTexts = document.querySelectorAll('.scrolling-text');
     const centerText = document.getElementById('centerText');
-    const registerButton = document.getElementById('registerButton');
+    const btn = document.getElementById('btn');
 
     scrollTexts.forEach((scrollText) => {
       scrollText.style.animationDuration = `${scrollText.scrollHeight / 150}s`;
@@ -76,7 +80,7 @@
     grid-template-columns: 2fr 1fr;
   }
 
-  .registerbutton {
+  .btn {
     padding: 0.5rem 1rem; /* Equivalent to px-4 py-2 */
     border-radius: 0.5rem; /* Equivalent to rounded-lg */
     background-color: #fff; /* Equivalent to bg-white */
@@ -86,12 +90,12 @@
     cursor: pointer;
   }
 
-  .registerbutton:hover {
+  .btn:hover {
     background-color: #D3D3D3; /* New background color on hover */
     /* Additional styles to apply on hover */
   }
 
-  .registerbutton + .registerbutton {
+  .btn + .btn {
     margin-top: 10px; /* Adjust the value as needed */
   }
 </style>
@@ -125,20 +129,14 @@
         <h1 class="mb-1">
           Need an account?
         </h1>
-        <button class = "registerbutton w-1/2">
-          sign up with google
-        </button>
-        <button class = "registerbutton w-1/2">
-          sign up with apple
-        </button>
-        <button class = "registerbutton w-1/2">
-          sign up with email
+        <button class = "btn w-1/2" on:click={redirectToRegister}>
+          sign up
         </button>
         <hr class = "my-5 w-1/2">
         <h1 class="mb-1">
           Already have an account?
         </h1>
-        <button class = "registerbutton w-1/2">
+        <button class = "btn w-1/2" on:click={redirectToSignIn}>
           sign in
         </button>
       </div>
