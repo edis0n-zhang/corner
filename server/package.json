@@ -6,7 +6,8 @@
     "start": "node ./bin/www",
     "start_old": "node --inspect=3000 -r ts-node/register ./bin/www",
     "devstart": "node -r ts-node/register ./bin/www",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "start_auth": "node server.js"
   },
   "dependencies": {
     "axios": "^1.6.0",
@@ -16,8 +17,10 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
+    "md5": "^2.3.0",
     "morgan": "~1.9.1",
     "openai": "^4.14.1",
+    "sqlite3": "^5.1.6",
     "svelte": "^4.2.2"
   },
   "devDependencies": {

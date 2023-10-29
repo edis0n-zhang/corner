@@ -1,8 +1,39 @@
 <script>
   import BigLogo from "$lib/images/biglogo.svelte"
+  import axios from 'axios';
+    import { signedIn } from "../../../store";
 
   function redirectToSignIn() {
       window.location.href = '/login/signin';
+  }
+
+  const userData = {
+      username: 'sampleUsername',
+      email: 'sample@email.com',
+      password: 'samplePassword'
+  };
+
+  async function handleRegistration(event) {
+      event.preventDefault(); // prevent default form submission
+
+      const formData = new FormData(event.target);
+      const user = {
+          email: formData.get('email'),
+          username: formData.get('username'),
+          password: formData.get('password'),
+          confirmPassword: formData.get('confirmPassword')
+      };
+
+      // Here, send the user details to the server
+      axios.post('/users/create', user, {
+          headers: { 'Content-Type': 'application/json'},
+      })
+        .then((res) => {
+          let response = res.data;
+          window.location.href = 'feed';
+          $signedIn = true;
+        })
+        .catch((err) => console.error(err))
   }
 </script>
 
@@ -17,15 +48,13 @@
         hearth
       </div>
     </div>
-    <!-- <div class="my-2">Email</div> -->
-    <input type="text" class="textbox" placeholder="Email">
-    <!-- <div class="my-2">Username</div> -->
-    <input type="text" class="textbox" placeholder="Username">
-    <!-- <div class="my-2">Password</div> -->
-    <input type="password" class="textbox" placeholder="Password">
-    <!-- <div class="my-2">Confirm Password</div> -->
-    <input type="password" class="textbox" placeholder="Confirm Password">
-    <button class="btn">confirm</button>
+    <form on:submit={handleRegistration}>
+      <input type="text" name="email" class="textbox w-full" placeholder="Email">
+      <input type="text" name="username" class="textbox w-full" placeholder="Username">
+      <input type="password" name="password" class="textbox w-full" placeholder="Password">
+      <input type="password" name="confirmPassword" class="textbox w-full" placeholder="Confirm Password">
+      <button class="btn w-full" type="submit">confirm</button>
+    </form>
     <h1 class="mb-1 my-5">
       Already have an account?
     </h1>
