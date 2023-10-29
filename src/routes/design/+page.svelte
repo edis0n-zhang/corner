@@ -2,6 +2,7 @@
     import axios from 'axios';
     import { onMount } from 'svelte';
     import ResponseBox from "$lib/components/gpt_response.svelte";
+    import { feedStore } from '../../store.js'
 
     let editorContainer;
     let editor;
@@ -77,3 +78,6 @@
 </div>
 
 
+<style lang="postcss">
+
+</style>
