@@ -6,7 +6,7 @@ var logger = require('morgan');
 const dotenv = require('dotenv').config()
 
 var indexRouter = require('./routes/index');
-var generatorRouter = require('./routes/generator');
+var generatorRouter = require('./routes/generator'); 
 
 var app = express();
 
@@ -40,3 +40,8 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+//users
+const usersRouter = require('./routes/users');
+
+app.use('/users', usersRouter);
